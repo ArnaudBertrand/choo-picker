@@ -1,0 +1,47 @@
+.locationContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.floatingLabel {
+  position: relative;
+  display: inline-block;
+}
+.floatingLabel .label {
+  position: absolute;
+  left: 20px;
+  top: -2em;
+  font-size: .75em;
+  cursor: text;
+  color: dodgerblue;
+  transition: all 150ms ease;
+}
+
+.floatingLabel.empty .input {
+  border-color: #d9d9d9;
+}
+
+.floatingLabel.empty .label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  background: none;
+  color: #cccccc;
+}
+
+.floatingLabel .input {
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+
+.floatingLabel .input:focus {
+  border-color: #d9d9d9;
+}
+
+.floatingLabel .input:valid {
+  border-color: #42d142;
+}
+
+.floatingLabel .input:invalid {
+  border-color: #ff8e7a;
+}
